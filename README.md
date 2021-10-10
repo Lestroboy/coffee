@@ -161,15 +161,61 @@ int main()
             while(quantity > sugargram);
             
             quantity = sugargram - quantity;
+            
+        do{
             cout<<"ENTER 1 TO PUT "<<sugargram<<"g OF SUGAR IN MILK."<<endl<<endl;
             cin>>A;
 
+            if(A > 1){
+            
+                cout<<"SORRY! BUT YOU HAVE TO PUT SUGAR IN THE MILK TO MAKE COFFEE LITTLE BIT SWEET :("<<endl<<endl;
+            }
+            
+            }
+            while(A > 1);
+            
+            cout<<"THAT'S GOOD! LET'S MOVE TO THE NEXT 5 STEP."<<endl<<endl;
+            
         
+        // STEP 5 TO MAKE COFFEE.
+    
+            cout<<"STEP: 5"<<endl<<endl;
         
-        
-        
-        
-        
+        do{
+            cout<<"HOW MUCH PACK OF COFFEE YOU WANT IN YOUR COFFEE?"<<endl<<endl;
+            cin>>quantity;
+            
+            if(quantity > coffeegram){
+                cout<<"SORRY! BUT YOU DON'T HAVE THAT MUCH OF COFFEE PACKET."<<endl<<endl;
+            }
+        }
+            while(quantity > coffeegram);
+            
+            quantity = coffeegram - quantity;
+            
+        do{
+            cout<<"ENTER 1 TO PUT "<<coffeegram<<"COFFEE PACK IN MILK."<<endl<<endl;
+            cin>>A;
+
+            if(A > 1){
+            
+                cout<<"SORRY! BUT YOU HAVE TO PUT COFFFEE PACK TO MAKE COFFEE BETTER :("<<endl<<endl;
+            }
+            
+            }
+            while(A > 1);
+            
+            cout<<"THAT'S GOOD! LET'S MOVE TO THE NEXT 6 STEP."<<endl<<endl;
+            
+        // STEP6 TO MAKE COFFEE.   
+            
+            cout<<"STEP: 6"<<endl<<endl;
+            
+            cout<<"NOW WE HAVE TO SET TIME FOR COFFEE TO GET READY!"<<endl<<endl;
+            cout<<"NOTE: STOVE IS ON THE MEDIUM FIRE."<<endl<<endl;
+            cout<<"ENTER THE TIME BELOW TO WAIT."<<endl<<endl;
+            
+            
         
         
         
