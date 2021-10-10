@@ -219,20 +219,30 @@ int main()
             if(minute < 5){
                 cout<<"YOUR COFFEE IS READY!\nBUT IT IS NOT BOILED NICELY."<<endl<<endl;
                 cout<<"YOU SHOULD HAVE WAITED MORE MINUTES :("<<endl<<endl;
+                cout<<"SO ANYWAY YOU HAVE TO DRINK YOUR COFFEE :)"<<endl;
             }
             
             else if((minute > 5)&&(minute < 8)){
                 cout<<"YOUR COFFEE IS READY!\nIT HAS BEEN BOILED PRETTY GOOD."<<endl<<endl;
                 cout<<"YOU SHOULD HAVE WAITED 4 TO 5 MORE MINUTES :("<<endl<<endl;
+                cout<<"SO FINALLY YOU CAN DRINK YOUR COFFEE :)"<<endl;
             }
             
             else if((minute > 8)&&(minute < 13)){
                  cout<<"YOUR COFFEE IS READY!\nIT HAS BEEN BOILED TOO GOOD."<<endl<<endl;
+                 cout<<"YAAAAAA....! SO FINALLY YOU CAN DRINK YOUR COFFEE :)"<<endl;
             }
             
-            cout<<"YAAAAAA....! SO FINALLY YOU CAN DRINK YOUR COFFEE :)"<<endl;
+            else if(minute > 13){
+                cout<<"OH-NO YOU HAVE BURN YOUR COFFEE\nYOU KEEPT YOUR COFFEE FOR A LONG TIME."<<endl<<endl;
+                cout<<"SO THERE'S NO WAY YOU CAN DRINK YOUR COFFEE :)"<<endl;
+            }
             
-    }
+            else if(minute < 2){
+                cout<<"OH-NO YOU PUT OFF THE STOVE SOO SOON\nYOUR COFFEE IS NOT YEAT BOILED."<<endl<<endl;
+                cout<<"IT'S ALL UP TO YOU IF YOU WAN TO DRINK YOUR COFFEE :)"<<endl;
+            }
+            
      
         // DON'T WANT COFFEE CONDITIONS.
         
