@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int A, balance, milk, gram, sugar, coffee;
+    int A, balance, milk, milkgram ,sugargram, coffeegram, sugar, coffee;
     
     cout<<"WELL, YOU MIGHT BE FELLING TIRED FOR NOW"<<endl<<endl;
     cout<<"WOULD YOU LIKE TO HAVE A CUP OF COFFEE!"<<endl<<endl;
@@ -40,8 +40,8 @@ int main()
         
         balance = balance - milk;
         
-        gram = milk * 100;
-        cout<<"WELL YOU PURCHED "<<gram<<"ML OF MILK."<<endl<<endl;
+        milkgram = milk * 100;
+        cout<<"WELL YOU PURCHED "<<milkgram<<"ML OF MILK."<<endl<<endl;
         cout<<"SO YOU ARE LEFT WITH "<<balance<<"$ MONEY WITH YOU."<<endl<<endl;
         
         
@@ -58,12 +58,12 @@ int main()
             cout<<"I THINK YOU HAVE TO BUY LESS GRAM OF SUGAR"<<endl<<endl;
         }
         }
-        while(suagar > balance);
+        while(sugar > balance);
         
         balance = balance - sugar;
         
-        gram = sugar * 100;
-        cout<<"WELL YOU PURCHED "<<gram<<"g OF SUGAR."<<endl<<endl;
+        sugargram = sugar * 10;
+        cout<<"WELL YOU PURCHED "<<sugargram<<"g OF SUGAR."<<endl<<endl;
         cout<<"SO YOU ARE LEFT WITH "<<balance<<"$ MONEY WITH YOU."<<endl<<endl;
         
         //BUYING INGREDIENTS - COFFEE PACKET.
@@ -83,8 +83,8 @@ int main()
         
         balance = balance - coffee;
         
-        gram = coffee * 100;
-        cout<<"WELL YOU PURCHED "<<gram<<"PACK OF COFFEE."<<endl<<endl;
+        coffeegram = coffee * 1;
+        cout<<"WELL YOU PURCHED "<<coffeegram<<"PACK OF COFFEE."<<endl<<endl;
         cout<<"SO YOU ARE LEFT WITH "<<balance<<"$ MONEY WITH YOU."<<endl<<endl;
         
         // MAKING OF COFFEE.
@@ -93,7 +93,7 @@ int main()
         
         cout<<"SO LET'S START WITH THE MAKING OF COFFEE"<<endl<<endl;
         
-        cout
+        
         
         
         
