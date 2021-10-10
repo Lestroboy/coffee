@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int A, balance, milk, milkgram ,sugargram, coffeegram, sugar, coffee, quantity;
+    int A, balance, milk, milkgram ,sugargram, coffeegram, sugar, coffee, quantity, minute;
     
     cout<<"WELL, YOU MIGHT BE FELLING TIRED FOR NOW"<<endl<<endl;
     cout<<"WOULD YOU LIKE TO HAVE A CUP OF COFFEE!"<<endl<<endl;
@@ -213,18 +213,27 @@ int main()
             
             cout<<"NOW WE HAVE TO SET TIME FOR COFFEE TO GET READY!"<<endl<<endl;
             cout<<"NOTE: STOVE IS ON THE MEDIUM FIRE."<<endl<<endl;
-            cout<<"ENTER THE TIME BELOW TO WAIT."<<endl<<endl;
+            cout<<"ENTER THE MINUTE [TIME] BELOW TO WAIT FOR COFFEE."<<endl<<endl;
+            cin>>minute;
             
+            if(minute < 5){
+                cout<<"YOUR COFFEE IS READY!\nBUT IT IS NOT BOILED NICELY."<<endl<<endl;
+                cout<<"YOU SHOULD HAVE WAITED MORE MINUTES :("<<endl<<endl;
+            }
             
-        
-        
-        
-        
-        
-        
-        
-        }
-    
+            else if((minute > 5)&&(minute < 8)){
+                cout<<"YOUR COFFEE IS READY!\nIT HAS BEEN BOILED PRETTY GOOD."<<endl<<endl;
+                cout<<"YOU SHOULD HAVE WAITED 4 TO 5 MORE MINUTES :("<<endl<<endl;
+            }
+            
+            else if((minute > 8)&&(minute < 13)){
+                 cout<<"YOUR COFFEE IS READY!\nIT HAS BEEN BOILED TOO GOOD."<<endl<<endl;
+            }
+            
+            cout<<"YAAAAAA....! SO FINALLY YOU CAN DRINK YOUR COFFEE :)"<<endl;
+            
+    }
+     
         // DON'T WANT COFFEE CONDITIONS.
         
         else if(A == 0){
